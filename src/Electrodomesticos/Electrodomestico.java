@@ -56,9 +56,9 @@ public class Electrodomestico {
    
     //Métodos privados
     
-    private static String colores[]={"blanco", "negro", "rojo", "azul", "gris"};
+    protected static String colores[]={"blanco", "negro", "rojo", "azul", "gris"};
     
-    private static char consumos[]={'A', 'B', 'C', 'D', 'E', 'F'};
+    protected static char consumos[]={'A', 'B', 'C', 'D', 'E', 'F'};
    
     private void comprobarColor(String color){
    
@@ -206,6 +206,10 @@ public class Electrodomestico {
         this.peso=peso;
         comprobarConsumoEnergetico(consumoEnergetico);
         comprobarColor(color);
+    }
+    
+    public String toString(){
+        return color+peso;
     }
    
 }

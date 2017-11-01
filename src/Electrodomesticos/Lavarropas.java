@@ -25,7 +25,9 @@ public class Lavarropas extends Electrodomestico{
     private int carga;
   
     //Métodos publicos
-  
+    public String hola(){
+        return "hola";
+    }
     /**
      * Devuelve la carga del lavarropas
      * @return
@@ -38,6 +40,7 @@ public class Lavarropas extends Electrodomestico{
      * Precio final del lavarropas
      * @return precio final del lavarropas
      */
+    @Override
     public double precioFinal(){
         //Invocamos el método precioFinal del método padre
         double plus=super.precioFinal();

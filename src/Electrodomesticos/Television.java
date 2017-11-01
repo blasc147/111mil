@@ -35,6 +35,7 @@ public class Television extends Electrodomestico {
      * Precio final de la television
      * @return precio final de la television
      */
+    @Override
     public double precioFinal(){
         //Invocamos el método precioFinal del método padre
         double plus=super.precioFinal();
